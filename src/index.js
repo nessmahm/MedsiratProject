@@ -6,6 +6,9 @@ import SignIn from './pages/Sign/SignIn'
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Elements/Header'
 import Footer from './components/Elements/Footer'
+import Profile from './pages/Profile/Profile'
+import Description from './pages/DescriptionProjet/Description'
+
 import './styles/style.css'
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom'
 import AddArticle from './pages/Article/AddArticle';
@@ -17,15 +20,15 @@ root.render(
   <React.StrictMode>
   <Router>
     <Header/>
-
     <Routes>
       <Route path="/" element={<Home/>} /> 
       <Route path="/addarticle" element={<AddArticle/>} /> 
       <Route path="/editarticle" element={<EditArticle/>} /> 
       <Route path="/signup" element = {<SignUp/>} />
       <Route path="/signin" element = {<SignIn/>} />
+      <Route path="/profile" element={<Profile/>}/>
+      <Route path="/description" element={<Description/>}/>
     </Routes>
-
     <Footer/>
   </Router>
 
