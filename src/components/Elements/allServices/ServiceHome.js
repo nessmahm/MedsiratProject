@@ -3,7 +3,7 @@ import React from "react"
 import CoursesCard from "./ServicesCard"
 import FieldCourses from "./FieldCourses"
 
-const CourseHome = () => {
+const ServiceHome = () => {
   return (
     <>
       <CoursesCard />
@@ -12,4 +12,4 @@ const CourseHome = () => {
   )
 }
 
-export default CourseHome
+export default ServiceHome

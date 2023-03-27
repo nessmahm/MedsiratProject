@@ -2,7 +2,7 @@ import React from "react"
 import "../allServices/services.css"
 import { servicesCard } from "../../../dummydata"
 import Title from "../Hero/Title"
-import fieldCourses from "../allServices/FieldCourses"
+import FieldCourses from "../allServices/FieldCourses"
 
 const HAbout = () => {
   return (
@@ -49,7 +49,7 @@ const HAbout = () => {
             </div>
           </div>
         </div>
-        <fieldCourses />
+        <FieldCourses />
       </section>
     </>
   )

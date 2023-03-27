@@ -8,6 +8,9 @@ import Header from './components/Elements/Header'
 import Footer from './components/Elements/Footer'
 import './styles/style.css'
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom'
+import AddArticle from './pages/Article/AddArticle';
+import EditArticle from './pages/Article/EditArticle';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +20,8 @@ root.render(
 
     <Routes>
       <Route path="/" element={<Home/>} /> 
+      <Route path="/addarticle" element={<AddArticle/>} /> 
+      <Route path="/editarticle" element={<EditArticle/>} /> 
       <Route path="/signup" element = {<SignUp/>} />
       <Route path="/signin" element = {<SignIn/>} />
     </Routes>
