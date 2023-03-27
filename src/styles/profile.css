@@ -1,0 +1,159 @@
+
+.profileContainer{
+    display: grid;
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+    margin-top: 20px;
+  
+}
+.leftSide{
+
+    background-color: white;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center; 
+    justify-content: space-evenly;
+
+}
+.leftSide  h1,h3{
+    margin: 18px auto;
+    color: #1F4B5B;
+
+}
+.imageContainer{
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  
+}
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  filter: brightness(0.8);
+}
+
+.formSide{
+    display: flex;
+justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+label{
+    margin-left: 17px;
+    padding: 10px;
+    color:#1F4B5B ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    width: 100%;
+    font-size: larger;
+} 
+
+form input{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 14px;
+    width: 90%;
+    height: 40px;
+    box-sizing: border-box;
+
+}
+
+.buttons{
+    margin-top: 10px;
+}
+
+button {
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    background-color: #326171; 
+    height: 40px;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    transform: scale(1.1) !important;
+    cursor: pointer;
+    background-color: #7aacbc;
+    color: #326171;
+  }
+  a{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #326171;
+  }
+  
+  a > svg {
+    margin-right: 15px;
+  }
+  a:hover{
+
+    color: rgba(2, 19, 27, 0.568);
+  }
+ /******************* MEDIA QUERIES (MEDIUM DEVICES)**** */
+@media screen and (max-width:1024px) {
+    .profileContainer{
+        grid-template-columns :1fr; 
+        gap:0;
+    
+
+  }
+  .leftSide{
+    width: 84%;
+    margin: 10px 60px;
+
+  }
+  
+}
+  /******************* MEDIA QUERIES (SMall DEVICES)**** */
+  @media screen and (max-width:600px) {
+    .profileContainer{
+        justify-content: center;
+    
+
+  }
+    .leftSide{
+        width: 90%;
+        margin-left: 25px;
+
+    
+      }
+    .formSide{
+        width: 100%;
+        margin-left: 8px;
+
+      }
+      .buttons{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+
+    }
+    button{
+        font-size: 14px;
+
+    }
+ }
