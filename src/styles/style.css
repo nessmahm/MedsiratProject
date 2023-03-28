@@ -10,7 +10,7 @@ padding-top : 90px;
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+
 }
 
 /*------------global-----------*/
@@ -194,3 +194,6 @@ p {
 
  html { scroll-behavior: smooth; }
 
+ .homepage *{
+  box-sizing: border-box;
+}

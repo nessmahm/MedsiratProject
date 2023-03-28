@@ -15,8 +15,7 @@
     justify-content: space-evenly;
 }
 
-.leftSide h1,
-h3 {
+.leftSide h1,.profileContainer h3 {
     margin: 18px auto;
     color: #1F4B5B;
 }

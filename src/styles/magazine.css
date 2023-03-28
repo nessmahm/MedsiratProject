@@ -11,7 +11,7 @@
 }
 
  
-  .title{
+ .magazine .title{
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 40px;
@@ -24,9 +24,12 @@
   .categories{
     display: flex;
     color:#4a8ea4;
-    text-align: start;
     font-weight: 700;
     font-size: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
   }
   .categories a{
    
@@ -37,13 +40,17 @@
     padding: 10px 20px 10px 20px;
     margin: 12px;
     font-family: 'Baloo 2', cursive;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     
      
   }
   .categories span{
     
     text-align: center;
+    width: 100%;
   }
 
   .categories a:hover{
