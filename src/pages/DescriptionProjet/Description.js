@@ -37,8 +37,8 @@ function Description() {
   return (
     <div className='DescriptionContainer'>
     <div className='leftBox'>
-    <form className='form'>  
-    <div>
+    <form className='description-form'>  
+    <div >
         <label htmlFor="titre">Titre du projet:</label>
         <input type="text" id="title" name="title" value={titre} onChange={handleTitreChange} placeholder="Entrez le nom de votre projet"/>
     </div>
