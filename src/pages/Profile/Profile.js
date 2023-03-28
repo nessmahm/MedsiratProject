@@ -34,7 +34,7 @@ function Profil() {
     // faire quelque chose pour déconnecter l'utilisateur
   }
   return (
-    <div className=''>
+    <div className='profileContainer'>
    
       
       <div className='leftSide'>

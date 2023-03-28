@@ -98,11 +98,6 @@ button:hover {
   text-transform: capitalize;
 }
 
-p {
-  line-height: 30px;
-  font-size: 18px;
-}
-
 .back {
   background-size: cover;
   background-attachment: fixed;
