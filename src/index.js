@@ -8,25 +8,34 @@ import Header from "./components/Elements/Header";
 import Footer from "./components/Elements/Footer";
 import "./styles/style.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import reportWebVitals from './reportWebVitals';
+import Header from './components/Elements/Header'
+import Footer from './components/Elements/Footer'
+import Profile from './pages/Profile/Profile'
+import Description from './pages/DescriptionProjet/Description'
+import AddArticle from './pages/Article/AddArticle';
+import EditArticle from './pages/Article/EditArticle';
 import Magazine from "./pages/Magazine";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Header />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/magazine" element={<Magazine />} />
-       
-      </Routes>
+  <Router>
+    <Header/>
+    <Routes>
+      <Route path="/" element={<Home/>} /> 
+      <Route path="/addarticle" element={<AddArticle/>} /> 
+      <Route path="/editarticle" element={<EditArticle/>} /> 
+      <Route path="/signup" element = {<SignUp/>} />
+      <Route path="/signin" element = {<SignIn/>} />
+      <Route path="/profile" element={<Profile/>}/>
+      <Route path="/description" element={<Description/>}/>
+      <Route path="/magazine" element={<Magazine />} />
+    </Routes>
+    <Footer/>
+  </Router>
 
-      <Footer />
-    </Router>
   </React.StrictMode>
 );
 
