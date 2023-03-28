@@ -23,7 +23,7 @@ function Footer() {
             
             <div className="part2">
 
-             <div className='contacts'>
+             <div className='contacts' id='contact'>
                 <h4>CONTACTS</h4>
                 <div className='contacts-element'>
                     <div className='element'>
