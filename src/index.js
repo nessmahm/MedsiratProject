@@ -21,6 +21,7 @@ root.render(
   <Router>
     <Header/>
     <Routes>
+      
       <Route path="/" element={<Home/>} /> 
       <Route path="/addarticle" element={<AddArticle/>} /> 
       <Route path="/editarticle" element={<EditArticle/>} /> 
