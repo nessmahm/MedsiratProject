@@ -1,26 +1,27 @@
 @import url('https://fonts.cdnfonts.com/css/charger-sport');
-
 .sign-container {
     display: flex;
     align-items: start;
     justify-content: center;
     margin: 20px auto;
-    background-color: rgba(255, 255, 255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     width: 70%;
-    height: 600px ;
+    height: 600px;
 }
+
 .signImage {
     background-image: url('../assets/images/sign-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width : 60%;
+    width: 60%;
     position: relative;
     height: 100%;
     object-fit: contain;
     z-index: 1;
-
 }
+
+
 /*
 .signImage::before{
     content: "";
@@ -37,18 +38,15 @@
 }
 */
 
-
 .sign-form {
     display: flex;
     flex-direction: column;
     align-items: start;
     width: 40%;
-    margin-left:40px;
-    padding:20px;
-    
-
-
+    margin-left: 40px;
+    padding: 20px;
 }
+
 .form {
     display: flex;
     flex-direction: column;
@@ -64,8 +62,7 @@
     width: 100%;
 }
 
-
-.form-label{
+.form-label {
     width: 100%;
     font-family: 'Charger Sport', sans-serif;
     font-size: 25px;
@@ -73,83 +70,81 @@
     line-height: 1.2;
 }
 
-.sign-form .input-container
-{
-margin: 0px;
-min-width: 40px;
-width: 90%;
-border-color:rgb(182, 179, 179);
-transition: 0.2s ease all;
-color: #326171;
-font-size: medium;
-font-weight: bold;
+.sign-form .input-container {
+    margin: 0px;
+    min-width: 40px;
+    width: 90%;
+    border-color: rgb(182, 179, 179);
+    transition: 0.2s ease all;
+    color: #326171;
+    font-size: medium;
+    font-weight: bold;
 }
-.sign-form .input-container::placeholder{
-    color:rgb(180, 176, 176);
+
+.sign-form .input-container::placeholder {
+    color: rgb(180, 176, 176);
     font-family: cursive;
 }
 
 .sign-form label {
     font-family: cursive;
- color:rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
 }
+
 .sign-btn {
-display: flex;
-justify-self: flex-end;
-margin-top:30px;
-padding-bottom: 20px;
-
-
+    display: flex;
+    justify-self: flex-end;
+    margin-top: 30px;
+    padding-bottom: 20px;
 }
+
 .sign-btn span {
-    font-family: cursive;   
-
+    font-family: cursive;
 }
+
 .sign-btn1 {
-    color:rgb(255, 255, 255);
-    background-color: #326171; 
+    color: rgb(255, 255, 255);
+    background-color: #326171;
     height: 40px;
     width: 80px;
     margin: 10px;
-
 }
 
 .sign-btn2 {
-color : #326171; 
+    color: #326171;
 }
-
 
 .sign-btn1:hover {
     transform: scale(1.1) !important;
     cursor: pointer;
     background-color: #7aacbc;
 }
-.sign-btn2:hover{
-color :#7aacbc;
+
+.sign-btn2:hover {
+    color: #7aacbc;
 }
+
 .sign-form .input-container:focus {
-    outline :none;
+    outline: none;
     transform: scale(1.08);
     border-width: 2px;
-    border-color: #326171 ;
+    border-color: #326171;
 }
 
-@media screen and (max-width: 1000px)
-{
-
-.sign-container{
-flex-direction: column;
-min-width: 400px;
-width: 50%;
-height: 100%;
-}
-.signImage{
-min-width: 0;
-width: 100%;
-height: 350px;
-}
-.sign-form{
-width: 80%;
-margin:  auto;
-}
+@media screen and (max-width: 1000px) {
+    .sign-container {
+        flex-direction: column;
+        min-width: 400px;
+        width: 50%;
+        height: 100%;
+    }
+    .signImage {
+        min-width: 0;
+        width: 100%;
+        height: 350px;
+    }
+    .sign-form {
+        width: 80%;
+        margin: auto;
+    }
 }

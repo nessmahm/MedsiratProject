@@ -1,48 +1,47 @@
-.DescriptionContainer{
-        margin: 60px auto;
-        display: grid;
-        grid-template-columns: 35% 35%;
-        justify-content: start;
-       background-color: #fff;
-       width: 67%;
-       border-radius: 10px;
-       height: 560px;
-       box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
-
-    }
-    .form{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        width: 80%;
-        padding: 15px;
-        border: 1px ;
-        border-radius: 10px;
-        height: 60%;
-        background-color: rgb(255, 255, 255);
-    }
-    label{
-        color:#1F4B5B ;
-        display: flex;
-        flex-direction: column;
-        margin-top: 8px;
-        width: 100%;
-        font-size: 20px;
-        font-weight: bold;
-        margin-left: 0px;
-       padding-left: 0px;
-    } 
-    
-    
-    
-.rightBox{
-      margin-top: 10px;
-      margin-left: 50px;
-
+.DescriptionContainer {
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 35% 35%;
+    justify-content: start;
+    background-color: #fff;
+    width: 60%;
+    border-radius: 10px;
+    height: 560px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
 }
-.leftBox{
+
+.description-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    padding: 15px;
+    border: 1px;
+    border-radius: 10px;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
 }
-textarea {
+
+.rightBox label,
+.leftBox label {
+    color: #1F4B5B;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 8px;
+}
+
+.rightBox {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.rightBox textarea {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -50,14 +49,15 @@ textarea {
     resize: vertical;
     height: 400px;
     box-sizing: border-box;
-  }
-  
-  textarea:focus {
+}
+
+.rightBox textarea:focus {
     outline: none;
     border-color: #0066ff;
     box-shadow: 0 0 5px #0066ff;
-  }
-  input{
+}
+
+.description-form input {
     padding: 10px;
     margin-top: 10px;
     border-radius: 4px;
@@ -67,14 +67,15 @@ textarea {
     height: 40px;
     margin-top: 4px;
     box-sizing: border-box;
-
 }
-input:focus {
+
+.description-form input:focus {
     outline: none;
     border-color: #0066ff;
     box-shadow: 0 0 5px #0066ff;
-  }  
-select {
+}
+
+.leftBox select {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -84,76 +85,79 @@ select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-  }
-  
-  select:focus {
+}
+
+.leftBox select:focus {
     outline: none;
     border-color: #0066ff;
     box-shadow: 0 0 5px #0066ff;
-  }
-  
-  select option {
+}
+
+.leftBox select option {
     padding: 10px;
     font-size: 16px;
     background-color: #fff;
     color: #555;
-  }
-  
-  select option:checked {
+}
+
+.leftBox select option:checked {
     background-color: #0066ff;
     color: #fff;
-  }
-  button {
+}
+
+.buttonContainer button {
     display: inline-block;
-    color:rgb(255, 255, 255);
-    background-color: #326171; 
-    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: #326171;
+    height: 50px;
     width: max-content;
     border-radius: 5px;
     border: none;
     margin-left: 20px;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 10px;
+}
 
-  }
-  button:hover {
+.buttonContainer button:hover {
     transform: scale(1.1) !important;
     cursor: pointer;
     background-color: #7aacbc;
     color: #326171;
-  }
-   /******************* MEDIA QUERIES (MEDIUM DEVICES)**** */
-   @media screen and (max-width:1024px) {
-    .DescriptionContainer{
-        width: 90%;
-        grid-template-columns :1fr; 
-        gap:0;
-        height: max-content;
-    
-
-  }
-  .leftBox{
-    width: 90%;
-    margin-left: 40px;
-
-
-  }
-  .rightBox{
-    width: 90%;
-  }
-  textarea{
-    margin-bottom: 20px;
-  }
-  .buttonContainer{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  }
 }
-  /******************* MEDIA QUERIES (SMall DEVICES)**** */
-  @media screen and (max-width:600px) {
-    textarea{
+
+
+/******************* MEDIA QUERIES (MEDIUM DEVICES)**** */
+
+@media screen and (max-width:1024px) {
+    .DescriptionContainer {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 0;
+        height: max-content;
+    }
+    .leftBox {
+        width: 90%;
+        margin-left: 40px;
+    }
+    .rightBox {
+        width: 90%;
+    }
+    .rightBox textarea {
+        margin-bottom: 20px;
+    }
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/******************* MEDIA QUERIES (SMall DEVICES)**** */
+
+@media screen and (max-width:600px) {
+    .rightBox textarea {
         width: 80%;
-      }
-    
-  }
+    }
+}

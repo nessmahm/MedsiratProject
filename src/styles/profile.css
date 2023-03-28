@@ -1,51 +1,51 @@
-
-.profileContainer{
+.profileContainer {
     display: grid;
     grid-template-columns: 35% 35%;
     justify-content: center;
     margin-top: 20px;
-  
 }
-.leftSide{
 
+.leftSide {
     background-color: white;
     border: 1px solid;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;    
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
-
 }
-.leftSide  h1,h3{
+
+.leftSide h1,
+h3 {
     margin: 18px auto;
     color: #1F4B5B;
-
 }
 
-.imageContainer{
-  display: flex;
-flex-direction: column;
-align-items: center;
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-img{
+
+.profileContainer img {
     border-radius: 50%;
     width: 90px;
     height: 90px;
     object-fit: cover;
-  
-}
-img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-  filter: brightness(0.8);
 }
 
-.formSide{
-    display: flex;
-justify-content: center;
+.profileContainer img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    filter: brightness(0.8);
 }
-form{
+
+.formSide {
+    display: flex;
+    justify-content: center;
+}
+
+.profileContainer form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,43 +55,67 @@ form{
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
 }
-label{
-    margin-left: 17px;
-    padding: 10px;
-    color:#1F4B5B ;
+
+.profileContainer label {
+    color: #1F4B5B;
     display: flex;
     flex-direction: column;
     margin-top: 8px;
     width: 100%;
-    font-size: larger;
-} 
-
-.input{
-  margin: 5px 10px;
-  min-width: 40px;
-  width: 90%;
-  border-color:rgb(182, 179, 179);
-  transition: 0.2s ease all;
-  color: #326171;
-  font-size: medium;
-  font-weight: bold;
-  
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 8px;
 }
-.input:focus{
-  outline :none;
-  transform: scale(1.08);
-  border-width: 2px;
-  border-color: #326171 ;
 
+.leftSide input {
+    margin: 10px 10px;
+    min-width: 40px;
+    width: 90%;
+    border-color: rgb(182, 179, 179);
+    transition: 0.2s ease all;
+    color: #326171;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid;
+    box-sizing: border-box;
+    padding: 7px;
+    border-radius: 4px;
 }
-.buttons{
+
+.leftSide input:focus {
+    outline: none;
+    transform: scale(1.08);
+    border-width: 2px;
+    border-color: #326171;
+}
+
+.formSide input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 14px;
+    width: 90%;
+    height: 40px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+}
+
+.formSide input:focus {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 5px #0066ff;
+}
+
+.profileContainer .buttons {
     margin-top: 10px;
 }
 
-button {
+.profileContainer button {
     display: inline-block;
-    color:rgb(255, 255, 255);
-    background-color: #326171; 
+    color: rgb(255, 255, 255);
+    background-color: #326171;
     height: 40px;
     margin: 10px;
     padding: 10px 20px;
@@ -99,68 +123,65 @@ button {
     border: none;
     font-size: 16px;
     cursor: pointer;
-  }
-  button:hover {
+}
+
+.profileContainer button:hover {
     transform: scale(1.1) !important;
     cursor: pointer;
     background-color: #7aacbc;
     color: #326171;
-  }
-  a{
+}
+
+.profileContainer a {
     display: flex;
     align-items: center;
     margin-top: 10px;
     color: #326171;
-  }
-  
-  a > svg {
-    margin-right: 15px;
-  }
-  a:hover{
-
-    color: rgba(2, 19, 27, 0.568);
-  }
- /******************* MEDIA QUERIES (MEDIUM DEVICES)**** */
-@media screen and (max-width:1024px) {
-    .profileContainer{
-        grid-template-columns :1fr; 
-        gap:0;
-    
-
-  }
-  .leftSide{
-    width: 84%;
-    margin: 10px 60px;
-
-  }
-  
 }
-  /******************* MEDIA QUERIES (SMall DEVICES)**** */
-  @media screen and (max-width:600px) {
-    .profileContainer{
-        justify-content: center;
-    
 
-  }
-    .leftSide{
+.profileContainer a>svg {
+    margin-right: 15px;
+}
+
+.profileContainer a:hover {
+    color: rgba(2, 19, 27, 0.568);
+}
+
+
+/******************* MEDIA QUERIES (MEDIUM DEVICES)**** */
+
+@media screen and (max-width:1024px) {
+    .profileContainer {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .leftSide {
+        width: 84%;
+        margin: 10px 60px;
+    }
+}
+
+
+/******************* MEDIA QUERIES (SMall DEVICES)**** */
+
+@media screen and (max-width:600px) {
+    .profileContainer {
+        justify-content: center;
+    }
+    .leftSide {
         width: 90%;
         margin-left: 25px;
-
-    
-      }
-    .formSide{
+    }
+    .formSide {
         width: 100%;
         margin-left: 8px;
-
-      }
-      .buttons{
-             display: flex;
-             justify-content: center;
-             align-items: center;
-
     }
-    button{
+    .profileContainer .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profileContainer button {
         font-size: 14px;
-
     }
- }
+}

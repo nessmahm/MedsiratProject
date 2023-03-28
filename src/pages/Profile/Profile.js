@@ -41,7 +41,7 @@ function Profil() {
         <div className='imageContainer'>
         <img src={imageUrl} alt="Profile" />
         <h3>Changer ma photo de profil</h3>
-        <input className='input' type="file" accept="image/*" onChange={handleImageUpload} />
+        <input  type="file" accept="image/*" onChange={handleImageUpload} />
         </div>
        <div className='AjouterArticle'>
        <button onClick={handleFileUpload} >Ajouter un article</button>
@@ -63,19 +63,19 @@ function Profil() {
      
       <label>
         Prénom:
-        <input className='input' type="text" value={prenom} onChange={(event) => setPrenom(event.target.value)} placeholder="Entrez votre prénom" required/>
+        <input  type="text" value={prenom} onChange={(event) => setPrenom(event.target.value)} placeholder="Entrez votre prénom" required/>
       </label>
       <label>
         Adresse mail:
-        <input className='input' type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="Entrez votre adresse mail" required/>
+        <input  type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="Entrez votre adresse mail" required/>
       </label>
       <label>
         Téléphone:
-        <input className='input'type="tel" value={telephone} onChange={(event) => setTelephone(event.target.value)} placeholder="Entrez votre numéro de téléphone" required/>
+        <input type="tel" value={telephone} onChange={(event) => setTelephone(event.target.value)} placeholder="Entrez votre numéro de téléphone" required/>
       </label>
       <label>
         Mot de passe:
-        <input className='input'type="password" value={motDePasse} onChange={(event) => setMotDePasse(event.target.value)} placeholder="Entrez votre mot de passe" required/>
+        <input  type="password" value={motDePasse} onChange={(event) => setMotDePasse(event.target.value)} placeholder="Entrez votre mot de passe" required/>
       </label>
     
       <div className='buttons'>
