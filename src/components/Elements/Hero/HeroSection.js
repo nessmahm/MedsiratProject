@@ -1,4 +1,5 @@
-import './Hero.css'
+import './Hero.css';
+import React from 'react';
 import Title from './Title';
 function Hero(){
     return(
