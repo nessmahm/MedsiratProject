@@ -4,7 +4,9 @@
     justify-content: center;
     margin-top: 20px;
 }
-
+.profileContainer * {
+box-sizing: border-box;
+}
 .leftSide {
     background-color: white;
     border: 1px solid;
