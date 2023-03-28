@@ -17,15 +17,6 @@ import EditArticle from './pages/Article/EditArticle';
 
 
 
-// import "./styles/style.css";
-
-
-import Header from './components/Elements/Header'
-import Footer from './components/Elements/Footer'
-import Profile from './pages/Profile/Profile'
-import Description from './pages/DescriptionProjet/Description'
-import AddArticle from './pages/Article/AddArticle';
-import EditArticle from './pages/Article/EditArticle';
 import Magazine from "./pages/Magazine";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -35,7 +26,6 @@ root.render(
   <Router>
     <Header/>
     <Routes>
-      
       <Route path="/" element={<Home/>} /> 
       <Route path="/addarticle" element={<AddArticle/>} /> 
       <Route path="/editarticle" element={<EditArticle/>} /> 
@@ -48,6 +38,8 @@ root.render(
     <Footer/>
   </Router>
 
+
+  
   </React.StrictMode>
 );
 
