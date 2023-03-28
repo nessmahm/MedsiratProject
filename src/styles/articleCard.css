@@ -1,0 +1,163 @@
+/* article.body{
+    background: #f5f5f5;
+    font: 15px open sans;
+    letter-spacing: -0.02em;
+  } */
+  
+  /* * {
+    box-sizing: border-box;
+  }
+   */
+  article {
+   
+    max-width: 1200px;
+    margin: 1em 1em;
+    margin-top: 80px;
+    
+  }
+  
+  icon {
+    font-family: fontawesome;
+  }
+  
+ 
+  
+  .post {
+    background: white;
+    width: 280px;
+    height: 400px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+    box-shadow: 0 3px 3px rgba(220, 220, 220, 0.5);
+    /* float: left; */
+    display: inline-block; 
+    font: 15px open sans;
+    letter-spacing: -0.02em;
+    box-sizing: border-box;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+  .post .post-image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover !important;
+    background-position: center center !important;
+    
+  }
+  .post .post-image:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    z-index: 2;
+    content: "";
+  }
+  .post .post-image .post-author {
+    background:#4a8ea4;
+    padding: 0.3em 1em;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    letter-spacing: -0.001em;
+  }
+  .post .post-card {
+    padding: 1em 1.5em;
+   
+  }
+  .post .post-card .post-title {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 0.6em 0 0.6em -0.05em;
+    letter-spacing: -0.05em;
+    color: #464646;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .post .post-card .post-title:hover {
+    color: #131313;
+  }
+  .post .post-card .post-date {
+    color: #797979;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.6em;
+    font-size: 0.9em;
+    border-bottom: 1px solid gainsboro;
+  }
+  .post .post-card .post-content {
+    color: #797979;
+    line-height: 1.8em;
+    height: 5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .post .post-card .post-cat {
+    text-transform: uppercase;
+    color: #797979;
+    font-size: 0.9em;
+  }
+  .post .post-card .post-read {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4a8ea4;
+    font-weight: 700;
+    font-size: 0.9em;
+    letter-spacing: -0.1em;
+    margin-top: 1em;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+  }
+  .post .post-card .post-read:hover {
+    color:#4a8ea4;
+  }
+  .post .post-card .post-share {
+    margin-bottom: 0.7em;
+    overflow: hidden;
+  }
+  .post .post-card .post-share label {
+    position: relative;
+    z-index: 2;
+  }
+  .post .post-card .post-share label icon {
+    margin-right: 0.5em;
+    cursor: pointer;
+    color: #797979;
+  }
+  .post .post-card .post-share label icon:hover {
+    color:#4a8ea4;
+  }
+  .post .post-card .post-share .post-share-options {
+    display: inline-block;
+    margin-left: -200px;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0, 0, 0.58, 1);
+    z-index: 1;
+    position: relative;
+  }
+  .post .post-card .post-share .post-share-options a {
+    text-decoration: none;
+    color: #797979;
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .post .post-card .post-share .post-share-options a:hover {
+    color: #4a8ea4;
+  }
+  .post .post-card .post-share input[type=checkbox] {
+    display: none;
+  }
+  .post .post-card .post-share input:checked + label .post-share-options {
+    margin-left: 0;
+    opacity: 1;
+  }
