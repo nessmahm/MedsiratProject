@@ -1,3 +1,4 @@
+import React from "react";
 import './Hero.css'
 import Title from './Title';
 function Hero(){

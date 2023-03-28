@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import '../../styles/profile.css';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
+// import { faLock } from '@fortawesome/free-solid-svg-icons';
 import image from '../../assets/images/avatar.jpg'
 function Profil() {
   const [imageUrl, setImageUrl] = useState(image); // Set a default image

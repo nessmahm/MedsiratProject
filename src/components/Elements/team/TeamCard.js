@@ -1,6 +1,6 @@
 import React from "react"
 import { team } from "../../../dummydata"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const TeamCard = () => {
   return (

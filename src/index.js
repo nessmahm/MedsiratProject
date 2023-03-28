@@ -1,14 +1,14 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Home from "./pages/Home/Home";
 import SignUp from "./pages/Sign/SignUp";
 import SignIn from "./pages/Sign/SignIn";
 import reportWebVitals from "./reportWebVitals";
-import Header from "./components/Elements/Header";
-import Footer from "./components/Elements/Footer";
-import "./styles/style.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import reportWebVitals from './reportWebVitals';
+
+// import "./styles/style.css";
+
+
 import Header from './components/Elements/Header'
 import Footer from './components/Elements/Footer'
 import Profile from './pages/Profile/Profile'
