@@ -5,7 +5,7 @@ import Hero from '../../components/Elements/Hero/HeroSection'
 import Team from '../../components/Elements/team/Team'
 function Home() {
   return (
-    <div>
+    <div className="homepage">
 <Hero/>
 <AboutCard></AboutCard>
 <HAbout></HAbout>

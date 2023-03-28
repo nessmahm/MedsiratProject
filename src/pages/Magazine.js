@@ -9,10 +9,10 @@ function Magazine() {
       <div className="firstPart">
         <h1 className="title">Découvrez nos articles</h1>{" "}
         <div className="categories">
-          <a ><span></span>Tous</a>
-          <a><span></span>Entrepreneuriat</a>
-          <a><span></span>Leadership</a>
-          <a><span></span>Gestion des risques</a>
+          <a ><span>Tous</span></a>
+          <a><span>Entrepreneuriat</span></a>
+          <a><span>Leadership</span></a>
+          <a><span>Gestion des risques</span></a>
         </div>
       </div>
       <div className="catalogue">
