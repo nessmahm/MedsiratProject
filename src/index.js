@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/Home/Home';
@@ -15,9 +16,13 @@ import AddArticle from './pages/Article/AddArticle';
 import EditArticle from './pages/Article/EditArticle';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+import Magazine from "./pages/Magazine";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+
   <Router>
     <Header/>
     <Routes>
@@ -28,10 +33,13 @@ root.render(
       <Route path="/signin" element = {<SignIn/>} />
       <Route path="/profile" element={<Profile/>}/>
       <Route path="/description" element={<Description/>}/>
+      <Route path="/magazine" element={<Magazine />} />
     </Routes>
     <Footer/>
   </Router>
 
+
+  
   </React.StrictMode>
 );
 
