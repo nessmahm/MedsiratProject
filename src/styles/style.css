@@ -1,15 +1,8 @@
 body {
-  background-color: white;
-  margin: 0;
-  padding-top: 90px;
-}
-
-html {
-  scroll-behavior: smooth;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #f8f8f8;
-  padding-top: 90px;
+margin : 0 ;
+font-family: "Roboto", sans-serif;
+background-color: #f8f8f8;
+padding-top : 90px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
@@ -199,6 +192,5 @@ p {
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+ html { scroll-behavior: smooth; }
+

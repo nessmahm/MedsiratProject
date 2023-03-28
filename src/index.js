@@ -1,10 +1,21 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ReactDOM from "react-dom/client";
-import Home from "./pages/Home/Home";
-import SignUp from "./pages/Sign/SignUp";
-import SignIn from "./pages/Sign/SignIn";
-import reportWebVitals from "./reportWebVitals";
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Home from './pages/Home/Home';
+import SignUp from './pages/Sign/SignUp'
+import SignIn from './pages/Sign/SignIn'
+import reportWebVitals from './reportWebVitals';
+import Header from './components/Elements/Header'
+import Footer from './components/Elements/Footer'
+import Profile from './pages/Profile/Profile'
+import Description from './pages/DescriptionProjet/Description'
+
+import './styles/style.css'
+import {BrowserRouter as Router , Route , Routes } from 'react-router-dom'
+import AddArticle from './pages/Article/AddArticle';
+import EditArticle from './pages/Article/EditArticle';
+
+
 
 // import "./styles/style.css";
 
