@@ -14,10 +14,13 @@ import './styles/style.css'
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom'
 import AddArticle from './pages/Article/AddArticle';
 import EditArticle from './pages/Article/EditArticle';
-
-
+import './styles/modal.scss';
+import './Modals/FieldModal'
 
 import Magazine from "./pages/Magazine";
+import SignUpEntrep from './pages/Sign/SignUpEntrep';
+import SignUpCoach from './pages/Sign/SignUpCoach';
+import FieldModal from './Modals/FieldModal';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -31,7 +34,10 @@ root.render(
       <Route path="/editarticle" element={<EditArticle/>} /> 
       <Route path="/signup" element = {<SignUp/>} />
       <Route path="/signin" element = {<SignIn/>} />
+      <Route path="/signupcoach" element = {<SignUpCoach/>} />
+      <Route path="/signupentrepreneur" element = {<SignUpEntrep/>} />
       <Route path="/profile" element={<Profile/>}/>
+      <Route path="/modal" element={<FieldModal/>}/>
       <Route path="/description" element={<Description/>}/>
       <Route path="/magazine" element={<Magazine />} />
     </Routes>

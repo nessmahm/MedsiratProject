@@ -1,51 +1,69 @@
-import React from 'react'
+import React ,{useState}from 'react'
+import SignUpCoach from './SignUpCoach';
+import SignUpEntrep from './SignUpEntrep';
+import SignUpPart1 from './SignUpPart1';
 import {BiRightArrowAlt} from  "react-icons/bi";
+import {BiLeftArrowAlt} from  "react-icons/bi";
+
 function SignUp() {
-  return (
-   
-    <div className='sign-container'>
-        
-        <div className='signImage'> </div> 
+    const [signUp,setSignUp] = useState(true);
+    const [coachSignUp,setCoachSignUp] = useState(false);
+    const [entrepreneurSignUp,setEntrepreneurSignUp] = useState(false);
+    
+    return (
+<div className='sign-container'>
+    <div className='signImage'> </div> 
 
-        <div className='sign-form'>
+    <div className='sign-form'>
 
-            <div className='form-label'><h2>Sign Up : </h2></div>
+    <div className='form-label'><h2>Sign Up : </h2></div>
 
-            <div className="form">
-
-                <div className='form-element'>
-                    <label>Full Name</label>
-                    <input className ="input-container" type="text" placeholder='john doe' />
-                </div>
-
-                <div className='form-element'>
-                    <label>Email</label>
-                    <input type="text" className ="input-container"  placeholder='johndoe@gmail.com' />
-                </div>
-
-                <div className='form-element'>
-                    <label>Username</label>
-                    <input type="text" className ="input-container"  placeholder='john123' />
-                </div>
-                <div className='form-element'>
-                    <label>Password</label>
-                    <input type="password" className ="input-container" placeholder='***************' />
-                </div>
-                <div className='form-element'>
-                    <label>Password</label>
-                    <input type="password" className ="input-container"  placeholder='***************' />
-                </div>
-            </div>
-            
-            <div className='sign-btn'> 
-                <a href='./signup' type="submit" className='sign-btn1 btn'> <span>Sign Up</span> </a> 
+    {signUp?
+      (<>
+        <SignUpPart1/>
+        <div className='choices-btn'>
+                
+                <button className="btn" onClick={()=>setSignUp(false) && setCoachSignUp(true)&& console.log(SignUpCoach)}>Coach</button>
+                <button className="btn" onClick={()=>  setSignUp(false) && setEntrepreneurSignUp(true)}>Entrepreneur</button>
+               
+        </div>
+        <div className='sign-btn'> 
                 <a href='./signin' type="submit" className='btn sign-btn2' > <span>Sign In</span><BiRightArrowAlt/></a> 
+        </div>
+        </>
+    )
+    :
+    (
+    SignUpCoach?
+    <>
+        <SignUpCoach/>
+        <div className='sign-btn'> 
+                <a type="submit" className='btn sign-btn2' onClick={()=>setSignUp(true) && setCoachSignUp(false)} ><BiLeftArrowAlt/> <span>Back</span></a> 
+                <a type="submit" className='sign-btn1 btn'> <span>Submit</span> </a> 
+        </div>
+    </>
+    : 
+     (SignUpEntrep?
+    ( <>
+        <SignUpEntrep/>
+        <div className='sign-btn'> 
+                <a type="submit" className='sign-btn1 btn'> <span>Submit</span> </a> 
+                <a type="submit" className='btn sign-btn2' onClick={()=>setSignUp(true) && setCoachSignUp(false)} ><BiLeftArrowAlt/> <span>Back</span></a> 
 
-            </div>
 
         </div>
+    </>)
+    : (<></>)
+    ))
+      }
+    
+    
+    
     </div>
- )
+
+
+</div>
+        )
 }
 
 export default SignUp
