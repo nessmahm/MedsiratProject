@@ -107,7 +107,7 @@
   .post .post-card .post-read {
     text-decoration: none;
     text-transform: uppercase;
-    color: #4a8ea4;
+    color: #1eb2a6;
     font-weight: 700;
     font-size: 0.9em;
     letter-spacing: -0.1em;
@@ -117,7 +117,7 @@
     width: 100%;
   }
   .post .post-card .post-read:hover {
-    color:#4a8ea4;
+    color:#326171;
   }
   .post .post-card .post-share {
     margin-bottom: 0.7em;
