@@ -5,10 +5,10 @@
     top : 0 ;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    background-color: #1F4B5B;
     margin:0;
     z-index: 100;
-    color:#1F4B5B ;
+    color:white  ;
     position: fixed;
     box-shadow:  -4px 4px 10px rgb(159, 158, 158);
 }
@@ -220,7 +220,7 @@ z-index: 200;
 
 }
 .navLinks a , .signInButtn a {
-color :#1F4B5B ;
+color :white ;
 border-style: none;
 font-size: 20px;
 padding: 30px ;
@@ -231,8 +231,8 @@ font-weight: 600;
 
 
 .signInButtn a  span {
-        color: white;
-        background-color: #1F4B5B ;
+        color: #1F4B5B;
+        background-color: white ;
         border-radius: 15px;
         border: solid 1px #1F4B5B ;
         padding :  5px 15px ;
@@ -248,13 +248,13 @@ font-weight: 600;
 }
 
 .navLinks a span:hover{
-    color:#14323d ;
+    color:white ;
 }
 
 .navLinks a span:after{
     display:block;
     content: '';
-    border-bottom: solid 3px #1F4B5B ;  
+    border-bottom: solid 3px white ;  
     transform: scaleX(0);  
     transition: transform 300ms ease-in-out;
 }
@@ -271,7 +271,7 @@ font-weight: 600;
 .logo{
 font-size: 30px;
 margin-left: 70px;
-color :#275F73 ;
+color :#ddf4fc ;
 text-decoration: none;
 }
 
@@ -295,14 +295,14 @@ margin: auto;
     margin:20px;
     position: absolute;
     width: 50px;
-    background-color: white;
+    background-color: #1F4B5B;
 
 
 }
  .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #1F4B5B;
+    background-color: white;
     margin: 5px 0;
     transition: 0.4s;
     border-radius: 10px;
@@ -330,13 +330,17 @@ display: none;
     justify-content: center;
     min-height: 400px;
     background-color: rgba(165, 164, 164, 0.7) ;
-
+    padding-bottom : 20px;
 }
 .navLinks{
     justify-content: center;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 20px;
+   
+}
+.navLinks a {
+height: 20px;
 }
 .navLinks a span:hover{
     color:rgb(255, 255, 255);
