@@ -28,7 +28,7 @@ function SignIn() {
 
 
             <div className='sign-btn'> 
-                <a href='./signin' type="submit" className='btn sign-btn1' > <span>Sign In</span></a> 
+                <a href='./signin' type="submit" className='btn sign-btn1' > <span>Connect</span></a> 
                 <a href='./signup' type="submit" className='btn sign-btn2'> <span>Sign Up</span><BiRightArrowAlt/></a> 
             </div>
 

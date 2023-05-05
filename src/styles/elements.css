@@ -335,14 +335,18 @@ display: none;
 .navLinks{
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    height: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+   
 }
 .navLinks a {
 height: 20px;
 }
 .navLinks a span:hover{
     color:rgb(255, 255, 255);
+}
+.navLinks a {
+padding: 20px;
 }
 .navmodal 
 {    
@@ -373,5 +377,7 @@ footer .contacts div {
 }
 footer .part1 {
 flex-direction: column;
+}
+button {
 }
 }
