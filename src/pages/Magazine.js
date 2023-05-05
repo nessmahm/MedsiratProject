@@ -1,13 +1,15 @@
 import React from "react";
 import ArticleCard from "../components/catalogue/ArticleCard";
-
+import Title from "../components/Elements/Hero/Title";
 import "../styles/magazine.css";
 
 function Magazine() {
   return (
     <div className="magazine">
       <div className="firstPart">
-        <h1 className="title">Découvrez nos articles</h1>{" "}
+      <Title subtitle='Nos Articles' title='explorez nos articles' />
+      {/* <h1 className="title"> Nos Articles</h1>{" "}
+        <h1 className="title">Découvrez nos articles</h1>{" "} */}
         <div className="categories">
           <a ><span>Tous</span></a>
           <a><span>Entrepreneuriat</span></a>
