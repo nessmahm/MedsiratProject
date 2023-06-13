@@ -4,7 +4,7 @@ function NavBar() {
     <div className="navLinks-container" >
             <ul className="navLinks">
                 <a href="/"><span>Notre guide</span></a>
-                <a href="/"><span>Nos services</span></a>
+                <a href="/#services"><span>Nos services</span></a>
                 <a href="/magazine"><span>Magazine</span></a>
 
                 <a href="#contact"><span>Contact</span></a>

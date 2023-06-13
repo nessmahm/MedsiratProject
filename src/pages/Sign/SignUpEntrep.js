@@ -1,51 +1,48 @@
-import React from 'react'
-import {BiLeftArrowAlt} from  "react-icons/bi";
-import FieldModal from '../../Modals/FieldModal';
+import React, { useState } from 'react';
 
-function SignUpEntrep() {
-    const EntrepreneurFields = [
-        "E-commerce",
-        "Marketing and Advertising",
-        "Financial Services",
-        "Health and Wellness",
-        "Food and Beverage",
-        "Consulting",
-        "Real Estate",
-        "Education",
-        "Technology",
-        "Manufacturing",
-        "Hospitality",
-        "Creative and Design",
-        "Legal Services",
-        "Non-profit",
-        "Retail",
-        "Agriculture",
-        "Construction",
-        "Transportation and Logistics",
-        "Energy and Utilities",
-        "Other"
-    ];
+function EntrepreneurForm() {
+  const [hasIdea, setHasIdea] = useState(null); // Initially set to null, can be 'yes' or 'no'
+
+  const handleRadioChange = (e) => {
+    setHasIdea(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Perform form submission or data handling here
+    console.log('Has Idea:', hasIdea);
+  };
+
   return (
-   
-
-        <div className="form">
-
-            <div className='form-element'>
-                     <div className='form-element'>
-                        <label>Company Name</label>
-                        <input type="text" className ="input-container"  placeholder='MedSirat' />
-                     </div>
-                     <div className='form-element slect-fields'>
-                        <label>Business Field</label>
-                        <FieldModal fields={EntrepreneurFields} fieldsName={"Business Field"} />
-                    </div>    
-                                                
-             
-                
-            </div>
-
-       
-</div>   )
+    <div className="entrepreneur-form">
+      <h2>Entrepreneur Information</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>
+            <input
+              type="radio"
+              value="yes"
+              checked={hasIdea === 'yes'}
+              onChange={handleRadioChange}
+            />
+            Yes, I already have an idea or startup.
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              type="radio"
+              value="no"
+              checked={hasIdea === 'no'}
+              onChange={handleRadioChange}
+            />
+            No, I don't have an idea or startup yet.
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
 }
 
-export default SignUpEntrep
+export default EntrepreneurForm;

@@ -11,6 +11,7 @@
     color:white  ;
     position: fixed;
     box-shadow:  -4px 4px 10px rgb(159, 158, 158);
+    margin-top: 0;
 }
 /*---------Footer------------*/
 footer {
@@ -21,7 +22,6 @@ align-items: center;
 justify-content: center;
 padding: 20px;
 bottom: 0;
-margin-top:90px;
 }
 footer .part1 {
 display: flex;
@@ -123,9 +123,10 @@ font-size: 15px;
 
 
 footer .footerlogo {
-align-self: center;
 color :rgba(216, 211, 211, 0.45);
 text-align: start;
+margin-left: -30px;
+margin-right: 20px;
 
 }
 
@@ -134,15 +135,14 @@ width: 90%;
 display: flex;
 align-items: center;
 justify-content: space-around;
-
 }
+
 footer  h4{
     color:#7aacbc;
     text-align: center;
     margin-bottom: 15px;
-
-
 }
+
 footer .contacts {
     display: flex;
     flex-direction: column;
@@ -361,6 +361,9 @@ padding: 20px;
 
 }
 
+footer  h4{
+    margin-top: 15px;
+}
 
 footer .part2 {
 flex-direction: column;
@@ -378,6 +381,6 @@ footer .contacts div {
 footer .part1 {
 flex-direction: column;
 }
-button {
-}
+
+
 }

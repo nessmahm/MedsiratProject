@@ -1,5 +1,5 @@
 import React from "react"
-import { awrapper } from "../../../dummydata"
+import { awrapper } from "../../../assets/dummydata"
 
 const Awrapper = () => {
   return (

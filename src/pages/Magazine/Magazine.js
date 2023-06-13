@@ -1,7 +1,7 @@
 import React from "react";
-import ArticleCard from "../components/catalogue/ArticleCard";
-import Title from "../components/Elements/Hero/Title";
-import "../styles/magazine.css";
+import ArticleCard from "../../components/catalogue/ArticleCard";
+import Title from "../../components/Elements/Hero/Title";
+import "../../styles/magazine.css";
 
 function Magazine() {
   return (

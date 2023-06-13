@@ -1,10 +1,13 @@
 .coursesCard {
-  padding: 50px 0;
+  padding: 40px 0;
+  margin-bottom: 50px;
+  margin-top: -20px;
 }
 .coursesCard .items {
   background-color: #fff;
   padding: 30px;
   text-align: center;
+  
 }
 .coursesCard .img {
   width: 80px;
@@ -63,6 +66,7 @@
 /*-------------field---------*/
 .field {
   text-align: center;
+  margin-bottom: -30px;
 }
 .field .box {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);

@@ -14,7 +14,7 @@ function Footer() {
                 <div className='abonnement'> 
                     <h2>Abonnez-vous maintenant pour rester à jour </h2>
                     <div className="abnformulaire ">
-                        <input className="input-container" type="email" placeholder='Adress e-mail *' />
+                        <input className="input-container" type="email" placeholder='Adresse e-mail *' />
                         <a href="" className='inscriptionbtn btn'> <span>Inscription</span>  </a>
                     </div>
                 </div>
@@ -24,7 +24,6 @@ function Footer() {
             <div className="part2">
 
              <div className='contacts' id='contact'>
-                <h4>CONTACTS</h4>
                 <div className='contacts-element'>
                     <div className='element'>
                         <p className='title'>Email:</p> 

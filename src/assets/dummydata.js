@@ -28,12 +28,12 @@ export const homeAbout = [
     {
       cover: "https://img.icons8.com/ios/80/ffffff/athlete.png",
       data: "320",
-      title: "Experts",
+      title: "EXPERTS",
     },
     {
       cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
       data: "1,000",
-      title: "Projets réalisés",
+      title: "PROJECTS",
     },
     {
       cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
@@ -48,7 +48,7 @@ export const homeAbout = [
       coursesName: "Explorer",
       courTeacher: [
         {
-          name: "Au quotidien sur le terrain, nous identifions les projets innovants et à impact. Nous détectons les startups qui font bouger l’Afrique et proposons une veille tech & innovation pour mieux comprendre l’actualité du secteur",
+          name: "Découvrez de nouvelles opportunités et élargissez vos horizons grâce à notre projet. Explorez des sujets passionnants, développez de nouvelles compétences et repoussez vos limites.",
         },
       ],
     },
@@ -58,7 +58,7 @@ export const homeAbout = [
       coursesName: "Accompagner",
       courTeacher: [
         {
-          name: "Nous accompagnons les entrepreneurs & porteurs de projet dans leur développement. Nous travaillons main dans la main avec les structures d’accompagnement et les organismes internationaux.",
+          name: "Nous vous accompagnons chaleureusement dans votre parcours d'apprentissage. Nos experts et mentors qualifiés sont là pour vous guider, vous soutenir et vous aider activement à atteindre vos objectifs..",
         },
       ],
     },
@@ -68,7 +68,7 @@ export const homeAbout = [
       coursesName: "Connecter",
       courTeacher: [
         {
-          name: "Nous sommes un réseau de passionnés, motivés par la volonté de mettre en lumière les initiatives. Notre méthode innovante et participative connecte entre eux tous les acteurs de l’environnement entrepreneurial.",
+          name: "Connectez-vous avec une communauté dynamique de passionnés partageant les mêmes intérêts. Échangez des idées, partagez des expériences et créez des liens précieux avec d'autres apprenants motivés.",
         },
       ],
     },
