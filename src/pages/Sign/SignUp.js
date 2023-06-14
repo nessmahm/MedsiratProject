@@ -68,18 +68,6 @@ function SignUp() {
             ) : entrepreneurSignUp ? (
               <>
                 <SignUpEntrep />
-                <div className='sign-btn'>
-                  <a type='submit' className='sign-btn1 btn'>
-                    <span>Submit</span>
-                  </a>
-                  <a
-                    type='submit'
-                    className='btn sign-btn2'
-                    onClick={() => setSignUp(true) && setEntrepreneurSignUp(false)}
-                  >
-                    <BiLeftArrowAlt /> <span>Back</span>
-                  </a>
-                </div>
               </>
             ) : (
               <></>

@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .article-form {
@@ -19,8 +20,9 @@
 
 .article-container .form-label {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     color: #5e5e5e;
+    text-align: left;
 }
 
 .article-container .form {
@@ -40,14 +42,13 @@
 
 .article-container .form-element label {
     font-weight: bold;
-    margin-bottom: 5px;
     color: rgb(100, 100, 100);
 }
 
 .article-container .form-element input,
 .article-container .form-element select {
     display: block;
-    width: 100%;
+    width: 45%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -56,7 +57,16 @@
     color: #333;
     background-color: #fff;
     margin-right: 80px;
+    margin-bottom: -15px;
+    text-align: left; 
 }
+
+.article-container .form-element input::placeholder,
+.article-container .form-element select::placeholder,
+.article-container .form-element textarea::placeholder {
+    color: rgb(100, 100, 100);
+}
+
 
 .article-container .form-element input:focus,
 .article-container .form-element select:focus {
@@ -75,8 +85,8 @@
 
 .article-container .form-element textarea {
     display: block;
-    width: 97%;
-    height: 200px;
+    width: 95%;
+    height: 180px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -84,11 +94,14 @@
     box-sizing: border-box;
     font-size: 14px;
     color: #333;
+    margin-bottom: -15px;
 }
 
 .article-container .form-element textarea:focus {
     outline: none;
     border-color: #007bff;
+    margin-left: 13px;
+    margin-top: 13px;
 }
 
 .article-container .input-container {
@@ -150,7 +163,7 @@
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
     background-color: #fff;
 }
@@ -160,7 +173,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 8px;
 }
 
 .article-container .btn {
@@ -172,6 +184,7 @@
     cursor: pointer;
     margin-right: 12px;
     margin-left: 12px;
+    margin-top: 20px;
 }
 
 .article-container .delete-btn-container {
@@ -180,3 +193,4 @@
     align-items: center;
     width: 100%;
 }
+

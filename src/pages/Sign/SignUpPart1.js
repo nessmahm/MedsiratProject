@@ -1,5 +1,6 @@
 import React from 'react'
 import {BiRightArrowAlt} from  "react-icons/bi";
+
 function SignUpPart1() {
   return (
     <div className="form">
@@ -21,6 +22,14 @@ function SignUpPart1() {
                     <input type="text" className ="input-container"  placeholder='john123' />
                 </div>
 
+                <div className="form-element">
+                    <label htmlFor="birthday">Birthday</label>
+                    <input
+                        type="date"
+                        id="birthday"
+                        name="birthday"
+                        className='date-input'/>
+                    </div>
                 <div className='form-element'>
                     <label>Phone Number</label>
                     <input type='tel' className='input-container' placeholder='12345678' pattern='[0-9]{10}' />
