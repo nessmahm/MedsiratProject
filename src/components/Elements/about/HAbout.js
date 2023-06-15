@@ -1,10 +1,17 @@
 import React from 'react';
 import { servicesCard } from '../../../assets/dummydata';
 import Title from '../Hero/Title';
+import { useNavigate } from 'react-router-dom';
 import FieldCourses from '../allServices/FieldCourses';
 import '../allServices/services.css';
 
 const HAbout = () => {
+  let navigate = useNavigate();
+  const handleConnect = () => {
+    navigate("/signin"); 
+    window.scrollTo(0, 0);// do something with the selected file
+  };
+
   return (
     <section  >
       <div className='container' >
@@ -35,7 +42,7 @@ const HAbout = () => {
                     </div>
                   </div>
                 </div>
-                <button className='outline-btn'>ENROLL!</button>
+                <button className='outline-btn' onClick={handleConnect}>ENROLL!</button>
               </div>
             ))}
           </div>
