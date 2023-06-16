@@ -23,18 +23,19 @@
   }
   .categories{
     display: flex;
-    color:#4a8ea4;
+    color: #1F4B5B;
     font-weight: 700;
     font-size: 20px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+
+
   }
   .categories a{
    
     border-radius: 10px;
-    border: 2px double #407181;
+    border: 1px double #1F4B5B;
     
     text-align: center;
     padding: 10px 20px 10px 20px;
@@ -43,6 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+      transition: 0.3s;
 
     
      
@@ -54,8 +56,9 @@
   }
 
   .categories a:hover{
-    transform: scale(1.1);
-    background-color:  #d8e5e9;;
+    transform: scale(1.05);
+    background-color: #366d81;
+      color:white;
   }
   .firstPart{
     display: flex;
