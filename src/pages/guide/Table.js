@@ -1,28 +1,29 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./table.css"; // import your CSS file
 
-function Table  ({ rowHeaders, columnHeaders, numHeaders }){
-  var initialRow;
-  if (columnHeaders.length === 3) {
-    initialRow = ["", "", ""];
-  } else if (columnHeaders.length === 4) {
-    initialRow = ["", "", "", ""];
-  }
+function Table  ({ tableName,rowHeaders, columnHeaders, numHeaders , tableValue,setTable,header}){
 
-  const [values, setValues] = useState([initialRow, initialRow, initialRow]);
+  const [tableInfo, setTablesInfo] = useState(tableValue[tableName]);
 
-  const handleInputChange = (rowIndex, colIndex, event) => {
-    const value = event.target.value;
-    setValues((prevInput) => {
-      const newInput = [...prevInput];
-      newInput[rowIndex][colIndex] = value;
-      return newInput;
-    });
+
+  useEffect(() => {
+      console.log("modifer table info",tableInfo)
+      console.log("modifer big table ",tableValue["ressourcesImmateriels"])
+      //setTable(prevTable => ({...prevTable,[tableName]:tableInfo}))
+
+  },[tableInfo])
+
+
+  const handleTable= (column,row, value)=>{
+
+    const cel = tableInfo[header[column]];
+    cel[row] = value;
+    console.log("cell", {...tableInfo,[header[column]]:cel})
+    setTablesInfo({...tableInfo,[header[column]]:cel})
+
   };
-  const handleTextareaResize = (event) => {
-    event.target.style.height = "auto";
-    event.target.style.height = event.target.scrollHeight + "px";
-  };
+const [rowNumber, setRowNumber] = useState(3);
+const rows = Array.from({ length: rowNumber }, (_, index) => index);
 
   return (
     
@@ -43,42 +44,41 @@ function Table  ({ rowHeaders, columnHeaders, numHeaders }){
       ) 
     } 
       
-      <table>
+     <table>
         <thead>
-          <tr>
-            {
-              numHeaders === 2 && (
-                <th className="header1"></th>
-              ) /* Empty cell for the top-left corner */
-            }
-            {columnHeaders.map((header, colIndex) => (
-              <th key={colIndex} className="header1">
-                {header}
-              </th>
-            ))}
-          </tr>
+        <tr>
+          {
+            columnHeaders && columnHeaders.map((header, colIndex) => (
+                  <th className="header1" id={"header: "+header} >{header}</th>
+
+              ))
+          }
+        </tr>
         </thead>
-        <tbody>
-          {values.map((row, rowIndex) => (
-            <tr key={rowIndex}>
-              {numHeaders === 2 && (
-                <th className="header2">{rowHeaders[rowIndex]}</th>
-              )}
-              {row.map((cellValue, colIndex) => (
-                <td key={colIndex}>
-                  <textarea
-                    className="cell1"
-                    value={cellValue}
-                    onChange={(event) =>
-                      handleInputChange(rowIndex, colIndex, event)
-                    }
-                    onInput={handleTextareaResize}
-                  />
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
+       <tbody>
+        {
+          rows?.map(rowIndex => (
+              <tr key={"row: "+rowIndex+tableName} >{
+                columnHeaders && columnHeaders?.map((column, colIndex) =>
+                      ( <td key={"column: "+colIndex+tableName}>
+                            <textarea
+                                className="cell1"
+                                value={tableInfo[header[colIndex]][rowIndex]}
+                                onChange={(event) =>(
+                                  handleTable(colIndex,rowIndex,event.target.value)
+                                )
+
+                                }
+                            />
+                      </td>))
+                  }
+              </tr>
+              ))
+        }
+       </tbody>
+
+
+
       </table>
     </div>
   );

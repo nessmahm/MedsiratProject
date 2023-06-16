@@ -1,10 +1,31 @@
 import Table from "./Table";
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { FaAngleRight } from 'react-icons/fa';
 import { FaAngleLeft } from 'react-icons/fa';
 function Ressource() {
-  const RessourceType=["Ressources financières",  "Ressources matérielles","Ressources immatérielles", 
+  const RessourceType=["Ressources financières",  "Ressources matérielles","Ressources immatérielles",
   "Ressources humaines", "Ressources communautaires",]
+
+  const initialTableState = {
+    ressources: ["", "", ""],
+    fondateurs: ["", "", ""],
+    description: ["", "", ""],
+    disponibilite: ["", "", ""]
+  };
+
+  const [ressourcesFinanciers, setressourcesFinanciers] = useState({ ...initialTableState });
+  const [ressourcesMateriels, setressourcesMateriels] = useState({ ...initialTableState });
+  const [ressourcesImmateriels, setressourcesImmateriels] = useState({ ...initialTableState });
+  const [ressourcesHumaines, setressourcesHumaines] = useState({ ...initialTableState });
+  const [ressourcesCommunautaires, setressourcesCommunautaires] = useState({ ...initialTableState });
+  const columns=["ressources","fondateurs","description","disponibilite"]
+
+  const data=["ressourcesFinanciers",
+  "ressourcesMateriels",
+  "ressourcesImmateriels",
+  "ressourcesHumaines",
+  "ressourcesCommunautaires"]
+
   const financeHeaders = [
     "Ressources Financières",
     "Fondateur",
@@ -35,81 +56,26 @@ function Ressource() {
     "Description et quantité",
     "disponibilité",
   ];
+  const [tablesInfo, setTablesInfo] = useState({
+    ressourcesFinanciers:ressourcesFinanciers,
+        ressourcesMateriels:ressourcesMateriels,
+        ressourcesImmateriels:ressourcesImmateriels,
+        ressourcesHumaines :ressourcesHumaines,
+        ressourcesCommunautaires:ressourcesCommunautaires
+  })
+
+  const tableHeaders=[financeHeaders,materialHeaders,nonMaterialHeaders,humanHeaders,communaHeaders]
+  const tableSets=[setressourcesFinanciers,setressourcesMateriels,setressourcesImmateriels,setressourcesHumaines,setressourcesCommunautaires]
+
+useEffect(() => {
+  console.log("big table ",tablesInfo)
+},[tablesInfo])
 
   const emptyHeader = [];
   const [tableIndex, setTableIndex] = useState(0); // state to keep track of the table index
-  const tables = [
-    <table key={0}>
-      {<Table
-          rowHeaders={emptyHeader}
-          columnHeaders={financeHeaders}
-          numHeaders={1}
-        />}
-    </table>,
-    <table key={1}>
-     {<Table
-          rowHeaders={emptyHeader}
-          columnHeaders={materialHeaders}
-          numHeaders={1}
-        />}
-    </table>,
-    <table key={2}>
-     { <Table
-          rowHeaders={emptyHeader}
-          columnHeaders={nonMaterialHeaders}
-          numHeaders={1}
-        />}
-    </table>
-    ,<table key={3}>
-      {<Table
-          rowHeaders={emptyHeader}
-          columnHeaders={humanHeaders}
-          numHeaders={1}
-        />}
-    </table>,
-    <table key ={4}>
-<Table
-          rowHeaders={emptyHeader}
-          columnHeaders={communaHeaders}
-          numHeaders={1}
-        />
-    </table>,
-    <div key={5}>
-      <div className="description1">
-        <h2 className="subDescription">
-          Proposez trois{"  "}
-          <span className="indication2"> 3 idées d'entreprises </span>
-          que vous pouvez lancer{"  "}
-          <span className="indication2">
-            {"  "}
-            en exploitant vos ressources{"  "}
-          </span>
-          {"  "}.{" "}
-        </h2>
-      </div>
-    
-    <div className="container2">
-        <input
-          type="text"
-          className="text-field2"
-          placeholder=" Ecrivez votre 1ere idée" />
-<br></br>
-        <input
-          type="text"
-          className="text-field2"
-          placeholder=" Ecrivez votre 2eme idée" />
-<br></br>
-        <input
-          type="text"
-          className="text-field2"
-          placeholder=" Ecrivez votre 3eme idée" />
-      </div>
 
-
-    </div>
-  ];
   const handleNextTable = () => {
-    if (tableIndex < tables.length - 1) {
+    if (tableIndex < 5) {
       setTableIndex(tableIndex + 1);
     }
   };
@@ -130,12 +96,60 @@ function Ressource() {
         {tableIndex >0 &&(
       <button className="arrow" onClick={handleBackTable}>  <FaAngleLeft size={70}  /></button> 
       )}
-      {tables[tableIndex]}
+          <div key={tableIndex}>
+            { tableIndex<5 &&
+                <Table
+                rowHeaders={emptyHeader}
+                columnHeaders={tableHeaders[tableIndex]}
+                numHeaders={1}
+                header={columns}
+                tableValue={tablesInfo}
+                setTable={setTablesInfo}
+                tableName={data[tableIndex]}
+            />}
+          </div>
+          {
+            tableIndex === 5 && <>
+                <div key={5}>
+                  <div className="description1">
+                    <h2 className="subDescription">
+                      Proposez trois{"  "}
+                      <span className="indication2"> 3 idées d'entreprises </span>
+                      que vous pouvez lancer{"  "}
+                      <span className="indication2">
+            {"  "}
+                        en exploitant vos ressources{"  "}
+          </span>
+                      {"  "}.{" "}
+                    </h2>
+                  </div>
+
+                  <div className="container2">
+                    <input
+                        type="text"
+                        className="text-field2"
+                        placeholder=" Ecrivez votre 1ere idée" />
+                    <br></br>
+                    <input
+                        type="text"
+                        className="text-field2"
+                        placeholder=" Ecrivez votre 2eme idée" />
+                    <br></br>
+                    <input
+                        type="text"
+                        className="text-field2"
+                        placeholder=" Ecrivez votre 3eme idée" />
+                  </div>
+
+
+                </div>
+              </>
+          }
       {tableIndex !== 5 &&(
       <button className="arrow" onClick={handleNextTable}>  <FaAngleRight size={70}  /></button> 
       )}
       </div>
-     
+
        
     </div>
   );
