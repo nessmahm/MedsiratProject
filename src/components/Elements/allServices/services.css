@@ -1,11 +1,11 @@
 .coursesCard {
-  padding: 40px 0;
+  padding: 20px 0;
   margin-bottom: 50px;
   margin-top: -20px;
 }
 .coursesCard .items {
   background-color: #fff;
-  padding: 30px;
+  padding: 5%;
   text-align: center;
   
 }
@@ -63,6 +63,7 @@
   font-weight: 500;
   color: #1eb2a6;
 }
+
 /*-------------field---------*/
 .field {
   text-align: center;
@@ -71,7 +72,7 @@
 .field .box {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
-  padding: 30px 20px;
+  padding: 10% 10%;
   transition: 0.5s;
 }
 .field .img {
@@ -87,7 +88,7 @@
 }
 .field h1 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
   margin: 20px 0;
   line-height: 30px;
 }
