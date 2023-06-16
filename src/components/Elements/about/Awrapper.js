@@ -4,13 +4,13 @@ import { awrapper } from "../../../assets/dummydata"
 const Awrapper = () => {
   return (
     <>
-      <section className='awrapper'>
-        <div className='container grid'>
+      <section className='achievement awrapper'>
+        <div className='container'>
           {awrapper.map((val) => {
             return (
-              <div className='box flex'>
+              <div className='box '>
                 <div className='img'>
-                  <img src={val.cover} alt='' />
+                    <i className={val.icon }></i>
                 </div>
                 <div className='text'>
                   <h1>{val.data}</h1>

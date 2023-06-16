@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d2c14c-7610-4f59-a296-f3a7e3470db5" name="Changes" comment="" />
+    <list default="true" id="93d2c14c-7610-4f59-a296-f3a7e3470db5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/dummydata.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/dummydata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Elements/about/Awrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Elements/about/Awrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Elements/about/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Elements/about/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Elements/allServices/FieldCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Elements/allServices/FieldCourses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Elements/allServices/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Elements/allServices/services.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
