@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93d2c14c-7610-4f59-a296-f3a7e3470db5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/catalogue/ArticleDetailed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/catalogue/ArticleMinimised.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Magazine/Article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/articleDetailed.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +78,7 @@
       <workItem from="1686823379675" duration="44000" />
       <workItem from="1686861122306" duration="7836000" />
       <workItem from="1686873055624" duration="397000" />
-      <workItem from="1687040239514" duration="6544000" />
+      <workItem from="1687040239514" duration="8376000" />
     </task>
     <servers />
   </component>
