@@ -1,0 +1,223 @@
+.article-total-body{
+    height: 100%;
+    display:flex;
+    justify-Content: space-evenly;
+    flex-Direction:column;
+
+}
+.article-title{
+    background-color: #E4EDF3;
+    width: 100%;
+    height: 80px;
+    font-size: 35px;
+    font-weight: 800;
+    color : #004767;
+    padding-bottom: 20px ;
+    margin-bottom: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+
+}
+.article-body{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    margin-bottom: 150px ;
+    margin-left:150px ;
+    margin-right: 150px;
+
+
+
+}
+
+.image-article{
+    width:100%;
+    height:max-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    object-fit: cover;
+
+}
+
+.article-details
+{
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right:30px;
+}
+.article-details-elements{
+    margin-right: 10px;
+    margin-top: 5px;
+    font-family: "Montserrat", Sans-serif, serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    word-break: break-word;
+    color: #4C4C4C;
+    display: inline-block;
+    align-self: center;
+}
+
+
+.otherPosts-display{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.otherPosts-display> div {
+    margin :10px;
+}
+.otherPosts-display> a {
+    margin :10px;
+}
+.recent-Posts-title {
+
+    background-color: #f8f8f8;
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color : #004767;
+    margin-bottom: 0px ;
+}
+.minimised-article-image{
+    width: 40%;
+    height:auto;
+}
+.minimised-article-body{
+    display : flex;
+    flex-direction: row;
+
+}
+.minimised-article-title{
+  margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color : #003045;
+
+}
+.article-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    padding-right: 20px;
+    text-align: justify;
+    margin-right: 30px;
+}
+.button-edit, .button-delete{
+    margin: 0px;
+    color:white;
+    border-radius: 9px;
+    text-transform: capitalize;
+    background-color: #1eb2a6;
+    padding: 15px 30px;
+    font-size: 16px;
+
+    margin-bottom: 10px;
+
+}
+.button-delete{
+    padding: 15px 20px;
+}
+.button-edit:hover {
+    background-color:#1F4B5B ;
+    transform : scale(1.1);
+
+}
+.button-edit-delete{
+    display: flex;
+    justify-content: space-evenly ;
+    flex-direction :row;
+    align-items: center;
+    margin-right: 50px;
+    margin-top:20px;
+}
+.button-delete:hover{
+    background-color: #9C1515 ;
+    transform : scale(1.1);
+}
+
+.button-edit:active {
+    background-color: #1F4B5B;
+}
+.search-form_container {
+    height: 15px;
+    width: fit-content ;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #03BFCB;
+    border-right: 1px solid #03BFCB;
+    padding : 5px;
+    margin: 0;
+
+
+}
+.search-form__input {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    white-space: normal;
+    background: none;
+    font-size: 15px;
+    text-align: left;
+    height: 50%;
+}
+.elementor-search-form__submit{
+
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    vertical-align: middle;
+    white-space: normal;
+    background: none;
+    line-height: 0.5;
+    min-width: 0;
+    font-size: 15px;
+    box-shadow: none;
+    height: 50%;
+    align-items:flex-end;
+
+
+}
+.image-container{
+    width: 90%;
+}
+
+@media (max-width: 790px) {
+    .article-body {
+        flex-direction: column;
+    }
+
+    .otherPosts-display> a {
+        margin :15px;
+    }
+    .button-edit-delete{
+        flex-direction: column;
+    }
+}
+.article-detailed-body{
+    display: flex;
+    justify-Content: center;
+    flex-Direction :column;
+    margin-Right:30px;
+    margin-Bottom: 30px;
+}
+.split{
+
+    font-Size :18px;
+    font-Weight:300;
+    color:#C4C9CA;
+    margin-Left: 30px;
+
+}

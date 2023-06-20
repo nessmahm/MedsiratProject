@@ -24,7 +24,7 @@ function ArticleCard({article}) {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </div>
-        <a href="#" className="post-read">
+        <a href="/article" className="post-read">
           Read More
         </a>
       </div>

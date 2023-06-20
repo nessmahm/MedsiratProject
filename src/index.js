@@ -15,6 +15,7 @@ import EditArticle from './pages/Article/EditArticle';
 import Magazine from "./pages/Magazine/Magazine";
 import Ressource from './pages/guide/Ressource';
 import Table from "./pages/guide/Table";
+import Article from "./pages/Magazine/Article";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -36,6 +37,7 @@ root.render(
         <Route path="/magazine" element={<Magazine />} />
         <Route path="/table" element={<Table rowHeaders={rowHeaders} columnHeaders={columnHeaders} numHeaders={2} />} />
         <Route path="/ressources" element={<Ressource />} />
+        <Route path="/article" element={<Article/>}/>
       </Routes>
       <Footer />
     </Router>
