@@ -80,21 +80,7 @@
   color: #fff;
 }
 
-.awrapper {
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  color: #0e4585;
-  margin-bottom: 20px;
-  }
-
-.awrapper .box {
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-}
-
-.awrapper img {
+.achievement img {
   width: 70px;
   margin-right: 20px;
   margin-left: -20px;
@@ -102,13 +88,13 @@
 }
 
 
-.awrapper h1 {
+.achievement h1 {
   font-size: 35px;
   font-weight: 500;
   margin-left: 30px;
 }
 
-.awrapper h3 {
+.achievement h3 {
   font-size: 20px;
   font-weight: 400;
   margin-left: 30px;
@@ -139,4 +125,31 @@
   }
 
 
+}
+.achievement {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:30px;
+
+}
+.achievement .box {
+  width: 200px;
+  height: 100px;
+  color: #0e4585;
+  display: flex;
+  align-items: center;
+  margin:20px;
+
+
+}
+.achievement   .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.achievement i {
+  font-size:50px;
 }
