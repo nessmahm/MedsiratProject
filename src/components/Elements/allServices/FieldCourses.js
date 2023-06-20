@@ -7,21 +7,24 @@ const FieldCourses= () => {
   return (
     <>
       <section className='field'>
-        <div className='container'>
           <Title subtitle='Votre domaine de projet' title='Voir les domaines maitrisés par nos experts' />
-          <div className='content grid3'>
+          <div className='field-content '>
             {field.map((val) => (
               <div className='box'>
-                <div className='img'>
-                  <img src={val.cover} />
-                  <img src={val.hoverCover} alt='' className='show' />
+                <div className={"box-body"}>
+                    <div className='img'>
+                        <img src={val.cover} />
+                        <img src={val.hoverCover} alt='' className='show' />
+                    </div>
+                    <h1>{val.courseName}</h1>
                 </div>
-                <h1>{val.courseName}</h1>
-                <span>{val.course}</span>
+                <div className={"box-footer"}>
+                    <span className={"expert"}>{val.course}</span>
+
+                </div>
               </div>
             ))}
           </div>
-        </div>
       </section>
     </>
   )

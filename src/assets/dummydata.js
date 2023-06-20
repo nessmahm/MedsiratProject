@@ -20,23 +20,23 @@ export const homeAbout = [
   ]
   export const awrapper = [
     {
-      cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
+      icon :"fa-sharp fa-solid fa-star",
       data: "3,000",
       title: "SUCCESS STORIES",
     },
   
     {
-      cover: "https://img.icons8.com/ios/80/ffffff/athlete.png",
+      icon :"fa-solid fa-user-tie",
       data: "320",
       title: "EXPERTS",
     },
     {
-      cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
+      icon : "fa-solid fa-folder-open",
       data: "1,000",
       title: "PROJECTS",
     },
     {
-      cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
+      icon:"fa-solid fa-newspaper" ,
       data: "587",
       title: "COURS",
     },
