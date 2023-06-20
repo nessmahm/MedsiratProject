@@ -18,7 +18,7 @@ function NavBar() {
     <div className="navLinks-container">
       <ul className="navLinks">
         <li>
-          <a href="/">
+          <a href="/guide">
             <span>Notre guide</span>
           </a>
         </li>

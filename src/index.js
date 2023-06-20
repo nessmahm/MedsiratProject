@@ -13,9 +13,12 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AddArticle from './pages/Article/AddArticle';
 import EditArticle from './pages/Article/EditArticle';
 import Magazine from "./pages/Magazine/Magazine";
-import Ressource from './pages/guide/Ressource';
-import Table from "./pages/guide/Table";
+import Ressource from './pages/Guide/Ressource';
+import Table from "./pages/Guide/Table";
 import Article from "./pages/Magazine/Article";
+import Guide from './pages/Guide/Guide';
+import GettingStarted from './pages/Guide/GettingStarted';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -38,6 +41,8 @@ root.render(
         <Route path="/table" element={<Table rowHeaders={rowHeaders} columnHeaders={columnHeaders} numHeaders={2} />} />
         <Route path="/ressources" element={<Ressource />} />
         <Route path="/article" element={<Article/>}/>
+        <Route path="/guide" element={<Guide/>} />
+        <Route path="/gettingstarted" element={<GettingStarted/>}/>
       </Routes>
       <Footer />
     </Router>

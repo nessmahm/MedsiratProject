@@ -4,7 +4,7 @@ function NavModal() {
         return (
           <div className="navLinks-container navmodal-container" >
             <ul className="navLinks navmodal">
-                <a href=""><span>Notre guide</span></a>
+                <a href="/guide"><span>Notre guide</span></a>
                 <a href=""><span>Nos services</span></a>
                 <a href="/magazine"><span>Magazine</span></a>
                 <a href="#contact"><span>Contact</span></a>
