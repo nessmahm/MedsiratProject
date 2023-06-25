@@ -1,0 +1,445 @@
+{
+    "version": "0.4",
+    "title": "Projects one",
+    "type": "page",
+    "metadata": {
+        "template_type": "single-page",
+        "include_in_zip": "1",
+        "elementor_pro_required": "1",
+        "wp_page_template": "default"
+    },
+    "content": [
+        {
+            "id": "774778fb",
+            "settings": {
+                "background_background": "classic",
+                "background_image": {
+                    "url": "http:\/\/kits.themekit.dev\/execoore\/wp-content\/uploads\/2020\/11\/wide-5.jpg",
+                    "id": 1941
+                },
+                "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": 0,
+                    "bottom": "0",
+                    "left": 0,
+                    "isLinked": false
+                },
+                "background_motion_fx_motion_fx_scrolling": "yes",
+                "background_motion_fx_translateY_effect": "yes",
+                "background_motion_fx_translateY_speed": {
+                    "unit": "px",
+                    "size": 9,
+                    "sizes": []
+                },
+                "background_size": "cover",
+                "structure": "20",
+                "background_position": "center center",
+                "background_overlay_background": "classic",
+                "__globals__": {
+                    "background_overlay_color": ""
+                }
+            },
+            "elements": [
+                {
+                    "id": "64d680c2",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": null
+                    },
+                    "elements": [
+                        {
+                            "id": "502d9def",
+                            "settings": {
+                                "title": "PROJECTS ONE",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Montserrat",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 45,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "800",
+                                "typography_line_height": {
+                                    "unit": "px",
+                                    "size": 55,
+                                    "sizes": []
+                                },
+                                "typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "__globals__": {
+                                    "title_color": "globals\/colors?id=0b9ba05"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "5d37870b",
+                            "settings": {
+                                "space": {
+                                    "unit": "px",
+                                    "size": 10,
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "spacer",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "689ea3",
+                            "settings": {
+                                "title": "CLIENTS FEATURED PROJECTS\n",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Montserrat",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 14,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "700",
+                                "typography_line_height": {
+                                    "unit": "px",
+                                    "size": 30,
+                                    "sizes": []
+                                },
+                                "typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "__globals__": {
+                                    "title_color": "globals\/colors?id=a5c4298"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "cad94d",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": null,
+                        "content_position": "center",
+                        "align": "flex-end",
+                        "align_mobile": "flex-start"
+                    },
+                    "elements": [
+                        {
+                            "id": "49b5a4da",
+                            "settings": {
+                                "view": "inline",
+                                "icon_list": [
+                                    {
+                                        "text": "Home",
+                                        "selected_icon": {
+                                            "value": "",
+                                            "library": ""
+                                        },
+                                        "_id": "3e87130"
+                                    },
+                                    {
+                                        "text": "",
+                                        "selected_icon": {
+                                            "value": "fas fa-minus",
+                                            "library": "fa-solid"
+                                        },
+                                        "_id": "c235a1b"
+                                    }
+                                ],
+                                "space_between": {
+                                    "unit": "px",
+                                    "size": 10,
+                                    "sizes": []
+                                },
+                                "icon_align": "right",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 13,
+                                    "sizes": []
+                                },
+                                "icon_self_align": "left",
+                                "text_color": "#FFFFFF",
+                                "icon_typography_typography": "custom",
+                                "icon_typography_font_family": "Montserrat",
+                                "icon_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 13,
+                                    "sizes": []
+                                },
+                                "icon_align_mobile": "left",
+                                "icon_typography_font_weight": "700",
+                                "_element_width": "auto",
+                                "__globals__": {
+                                    "text_color_hover": "globals\/colors?id=a5c4298",
+                                    "icon_color": "globals\/colors?id=0b9ba05",
+                                    "icon_color_hover": "globals\/colors?id=a5c4298"
+                                },
+                                "_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "_padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "icon-list",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "62b7ff32",
+                            "settings": {
+                                "view": "inline",
+                                "icon_list": [
+                                    {
+                                        "text": "Pages",
+                                        "selected_icon": {
+                                            "value": "",
+                                            "library": ""
+                                        },
+                                        "_id": "3e87130"
+                                    },
+                                    {
+                                        "text": "",
+                                        "selected_icon": {
+                                            "value": "fas fa-minus",
+                                            "library": "fa-solid"
+                                        },
+                                        "_id": "c235a1b"
+                                    }
+                                ],
+                                "space_between": {
+                                    "unit": "px",
+                                    "size": 10,
+                                    "sizes": []
+                                },
+                                "icon_align": "right",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 13,
+                                    "sizes": []
+                                },
+                                "icon_self_align": "left",
+                                "text_color": "#FFFFFF",
+                                "icon_typography_typography": "custom",
+                                "icon_typography_font_family": "Montserrat",
+                                "icon_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 13,
+                                    "sizes": []
+                                },
+                                "icon_align_mobile": "left",
+                                "icon_typography_font_weight": "700",
+                                "_element_width": "auto",
+                                "__globals__": {
+                                    "text_color_hover": "globals\/colors?id=a5c4298",
+                                    "icon_color": "globals\/colors?id=0b9ba05",
+                                    "icon_color_hover": "globals\/colors?id=a5c4298"
+                                },
+                                "_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "_padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "icon-list",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "3b6ea881",
+                            "settings": {
+                                "title": "Projects two",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Montserrat",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 13,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "700",
+                                "_element_width": "auto",
+                                "__globals__": {
+                                    "title_color": "globals\/colors?id=a5c4298"
+                                },
+                                "_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "_padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        },
+        {
+            "id": "2a2e2aca",
+            "settings": {
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals\/colors?id=6a03d42"
+                }
+            },
+            "elements": [
+                {
+                    "id": "51a5720",
+                    "settings": {
+                        "_column_size": 100,
+                        "_inline_size": null
+                    },
+                    "elements": [
+                        {
+                            "id": "3d54ef87",
+                            "settings": {
+                                "tabs": [
+                                    {
+                                        "_id": "37c451a",
+                                        "tab_title": "SOFTWARE",
+                                        "tab_content": "<p>[elementor-template id=\"1277\"]<\/p>"
+                                    },
+                                    {
+                                        "tab_title": "FINANCIAL",
+                                        "tab_content": "<p>[elementor-template id=\"1277\"]<\/p>",
+                                        "_id": "2465e42"
+                                    },
+                                    {
+                                        "_id": "e31ac8d",
+                                        "tab_title": "BUSINESS",
+                                        "tab_content": "<p>[elementor-template id=\"1277\"]<\/p>"
+                                    },
+                                    {
+                                        "_id": "2e3788c",
+                                        "tab_title": "HARDWARE",
+                                        "tab_content": "<p>[elementor-template id=\"1277\"]<\/p>"
+                                    }
+                                ],
+                                "border_width": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "tab_color": "#404D60",
+                                "tab_active_color": "#03BFCB",
+                                "__globals__": {
+                                    "border_color": "",
+                                    "tab_color": "globals\/colors?id=2bc5740",
+                                    "tab_active_color": "globals\/colors?id=a5c4298",
+                                    "background_color": ""
+                                },
+                                "_padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "tab_typography_typography": "custom",
+                                "tab_typography_font_family": "Montserrat",
+                                "tab_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 14,
+                                    "sizes": []
+                                },
+                                "tab_typography_font_weight": "700",
+                                "tab_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "-25",
+                                    "bottom": "0",
+                                    "left": "-25",
+                                    "isLinked": false
+                                },
+                                "_margin_tablet": {
+                                    "unit": "px",
+                                    "top": "-10",
+                                    "right": "-10",
+                                    "bottom": "-10",
+                                    "left": "-10",
+                                    "isLinked": true
+                                },
+                                "_margin_mobile": {
+                                    "unit": "px",
+                                    "top": "-10",
+                                    "right": "-10",
+                                    "bottom": "-10",
+                                    "left": "-10",
+                                    "isLinked": true
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "tabs",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        }
+    ]
+}
