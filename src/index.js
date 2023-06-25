@@ -13,15 +13,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AddArticle from './pages/Article/AddArticle';
 import EditArticle from './pages/Article/EditArticle';
 import Magazine from "./pages/Magazine/Magazine";
-import Ressource from './pages/Guide/Ressource';
-import Table from "./pages/Guide/Table";
+import Ressource from './pages/guide/Ressource';
+import Table from "./pages/guide/Table";
 import Article from "./pages/Magazine/Article";
-import Guide from './pages/Guide/Guide';
-import GettingStarted from './pages/Guide/GettingStarted';
-import Step1 from './pages/Guide/Step1/Step1';
-import Step2Form from './pages/Guide/Step2/Step2';
-import Step3 from './pages/Guide/Step3/Step3';
-import BMCView from './pages/Guide/Step3/BMCView';
+import Guide from './pages/guide/Guide';
+import GettingStarted from './pages/guide/GettingStarted';
+import Step1 from './pages/guide/Step1/Step1';
+import Step2Form from './pages/guide/Step2/Step2';
+import Step3 from './pages/guide/Step3/Step3';
+import BMCView from './pages/guide/Step3/BMCView';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

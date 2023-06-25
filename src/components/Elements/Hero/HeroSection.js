@@ -31,7 +31,7 @@ function Hero() {
               Medsirat vous guide pour réaliser vos projets étape par étape. Nos experts vous aident à trouver les meilleures solutions.
             </p>
             <div className='button-container'>
-            <button className='primary-btn hover-color1' onClick={handleConnect}>
+            <button style={{textAlign:"center"}} className='primary-btn hover-color1' onClick={handleConnect}>
               Commencez maintenant <i className='fa fa-long-arrow-alt-right' ></i>
             </button>
             <button className='hover-color2'  onClick={handleServices}>

@@ -20,14 +20,15 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-padding: 20px;
+padding: 50px;
 bottom: 0;
 }
 footer .part1 {
 display: flex;
 align-items: center;
 width: 70%;
-justify-content: space-between;
+justify-content: center;
+    margin:20px;
 }
 footer .abonnement {
 margin:20px;
@@ -124,14 +125,13 @@ font-size: 15px;
 
 footer .footerlogo {
 color :rgba(216, 211, 211, 0.45);
-text-align: start;
-margin-left: -30px;
-margin-right: 20px;
+text-align: center;
+
 
 }
 
 footer .part2 {
-width: 90%;
+width: 60%;
 display: flex;
 align-items: center;
 justify-content: space-around;
