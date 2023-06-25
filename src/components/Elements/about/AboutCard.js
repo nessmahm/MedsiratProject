@@ -16,7 +16,7 @@ const AboutCard = () => {
           <div className='items'>
             {homeAbout.map((val) => (
               <div className='item flexSB'>
-                <div className='image-container'>
+                <div className='' style={{width:"70px",marginRight:"20px"}}>
                   <img src={val.cover} alt='' />
                 </div>
                 <div className='text '>

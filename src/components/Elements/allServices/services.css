@@ -7,11 +7,10 @@
 }
 .coursesCard .items {
   background-color: #fff;
-  padding: 5%;
+  padding: 50px 30px;
   text-align: center;
   width: 400px;
-  margin-top:20px;
-  margin-right:20px;
+  margin:20px 40px;
 
   
 }
@@ -75,13 +74,15 @@
 .field {
   text-align: center;
   margin-bottom: -30px;
+  width: 80%;
+  margin:auto;
 }
 .field .box {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
-  padding: 10% 10%;
+  padding: 10px 10px;
   transition: 0.5s;
-  width:200px;
+  width:250px!important;
   height: 250px;
   margin: 10px;
 }
@@ -100,7 +101,6 @@
   font-weight: 500;
   font-size: 18px;
   margin: 10px 0;
-  line-height: 30px;
 }
 .field span {
   background-color: #f8f8f8;
@@ -144,3 +144,9 @@
 @media screen and (max-width: 768px) {
 }
 
+.homepage{
+  margin:0;
+  padding-right: 0px;
+  width: fit-content;
+
+}

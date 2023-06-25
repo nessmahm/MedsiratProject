@@ -11,13 +11,13 @@ function Footer() {
             <div className="part1">
                 <h1 className="footerlogo">MedSirat</h1>
 
-                <div className='abonnement'> 
+                {/*<div className='abonnement'>
                     <h2>Abonnez-vous maintenant pour rester à jour </h2>
                     <div className="abnformulaire ">
                         <input className="input-container" type="email" placeholder='Adresse e-mail *' />
                         <a href="" className='inscriptionbtn btn'> <span>Inscription</span>  </a>
                     </div>
-                </div>
+                </div>*/}
                
             </div>               
             
