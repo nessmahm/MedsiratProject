@@ -24,7 +24,7 @@ const SocialNeeds = () => {
 
   return (
     <div>
-      <h3>5 - Besoins sociaux</h3>
+      <h3>5. Besoins sociaux</h3>
       <p>Dégagez les besoins de votre région ainsi que leurs types (besoin environnemental, besoin des femmes, besoin des jeunes, etc...).{'\n'}       <p>Classer les besoins sociaux dégagés selon leur importance et leur récurrence:</p>
 </p>
 

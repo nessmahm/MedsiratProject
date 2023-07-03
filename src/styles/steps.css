@@ -188,10 +188,17 @@
   text-align:left;
 }
 
+.region .field-title{
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .region span{
   margin-left:10px;
  color: #22cfc9;
- font-weight: bold;}
+ font-weight: bold;
+}
 
  .region input{
   background-color: #fff;
@@ -286,6 +293,24 @@
 .bmc-revenue-streams {
   grid-area: 7 / 4 / span 1/ span 2;
 }
+
+.ficheForm{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.ficheForm td:first-child {
+  width: 20%;
+}
+
+
 
 @media screen and (max-width: 750px) {
   .Step1{

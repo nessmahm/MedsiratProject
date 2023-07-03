@@ -35,14 +35,14 @@ const RegionMappingComponent = () => {
 
   return (
     <div>
-      <h3>1 - Cartographie de la région de l'entreprise :</h3>
+      <h3>1. Cartographie de la région de l'entreprise :</h3>
       <p>Pour étudier l’environnement de l’entreprise, commencez par remplir le mapping suivant de votre région :</p>
 
       <div className="region">
         <ul>
           {fields.map((field, index) => (
             <li key={index}>
-              <span>{field.title}:</span>
+              <div className='field-title'><span>{field.title}:</span></div>
               <input
                 type="text"
                 value={field.value}

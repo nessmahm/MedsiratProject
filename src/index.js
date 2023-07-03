@@ -22,6 +22,7 @@ import Step1 from './pages/Guide/Step1/Step1';
 import Step2Form from './pages/Guide/Step2/Step2';
 import Step3 from './pages/Guide/Step3/Step3';
 import BMCView from './pages/Guide/Step3/BMCView';
+import Step4 from './pages/Guide/Step4/Step4';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -49,6 +50,7 @@ root.render(
         <Route path="/step1" element={<Step1/>}/>
         <Route path="/step2" element={<Step2Form/>}/>
         <Route path="/step3" element={<Step3/>}/>
+        <Route path="/step4" element={<Step4/>}/>
         <Route path='/bmc-view' element={<BMCView/>}/> 
       </Routes>
       <Footer />

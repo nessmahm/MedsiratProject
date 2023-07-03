@@ -18,7 +18,7 @@ const CapacitiesForm = () => {
 
     return (
         <div>
-        <h3>2 - Capacités des entrepreneurs : </h3>
+        <h3>2. Capacités des entrepreneurs : </h3>
         <p> Faites l'inventaire de vos capacités et lacunes dans le tableau suivant et précisez les actions à entreprendre pour se développer :</p>
 <ol>
   <li>- Comment profiter de vos capacités ?</li>

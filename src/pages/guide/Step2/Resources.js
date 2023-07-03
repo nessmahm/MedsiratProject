@@ -103,7 +103,7 @@ const ResourcesComponent = () => {
       
     return (
       <div>
-        <h3>3 - Ressources des entrepreneurs :</h3>
+        <h3>3. Ressources des entrepreneurs :</h3>
         <p>Faites l'inventaire de vos ressources collectives que vous mettrez à la disposition de l’entreprise :</p>
   
         <table>
@@ -360,7 +360,7 @@ const ResourcesComponent = () => {
           </tbody>
         </table>
         <button onClick={() => handleAddRow('communityResources')}>Ajouter une ressource communautaire</button>
-        <h3>4 - Proposition d'idées d'entreprise :</h3>
+        <h3>4. Proposition d'idées d'entreprise :</h3>
 <p>Étudiez l'inventaire de vos ressources et proposez trois idées d'entreprises que vous pouvez lancer en les exploitant :</p>
 <ol className='ideas-container'>
   <li>
