@@ -1,0 +1,106 @@
+.guideIntro-body{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height : 350px;
+    margin : 20px;
+    padding : 0px 100px;
+    max-height: 600px;
+
+
+}
+
+.guideIntro-wholeBody{
+    padding-Bottom: 30px;
+    height:max-content;
+    flex-Direction: column ;
+    padding: 0px 0px;
+    justify-content: space-between;
+    max-height: max-content;
+    margin: 0px 20px;
+
+}
+.guideIntro-body-2 {
+    display : flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.guideIntro-text{
+
+    display: flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    white-space: pre-line;
+    height: max-content;
+    background-color: #5f8db7;
+    color : white;
+    line-height: 1.8;
+    border-radius: 15px;
+    align-self: center;
+    margin: 10px 0px;
+}
+.guideIntro-title{
+    font-size:19px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+
+   ;}
+.guideIntro-description{
+    font-size: 15px;
+    font-weight: normal;
+    white-space: pre-line;
+    margin-bottom: 10px;
+
+}
+.guideIntro-image-container{
+    height:100%;
+    width: 50%;
+    border-radius: 15px;
+    padding: 0px 20px ;
+    margin: 10px 0px;
+    margin-top: -10px;
+
+
+}
+
+.guideIntro-image{
+    width: auto;
+    max-width: 60vh;
+    height:100%;
+    border-radius: 15px;
+    align-self: center;
+}
+.bold-text{
+    font-weight: bolder;
+}
+@media screen and (min-width: 400px) and (max-width:1120px) {
+
+    .guideIntro-body{
+        min-width: 400px;
+        display : flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height : max-content;
+        padding: 20px 40px ;
+
+    }
+
+    .guideIntro-image{
+        min-width: 200px;
+        height:100%;
+        border-radius: 15px;
+        padding-bottom: 30px;
+    }
+    .guideIntro-image-container{
+        height:100%;
+        width: auto;
+    }
+    .guideIntro-body2 {
+        flex-direction: column-reverse;
+    }
+}

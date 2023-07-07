@@ -76,10 +76,10 @@ const SocialNeeds = () => {
                 </select>
               </td>
               {index > 0 && (
-                <td>
-                  <button onClick={() => handleRemoveRow(index)}>X</button>
-                </td>
-              )}
+        <button className='remove-button' onClick={() => handleRemoveRow(index)}>
+          X
+        </button>
+      )}
             </tr>
           ))}
         </tbody>

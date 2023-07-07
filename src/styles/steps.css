@@ -311,6 +311,14 @@
 }
 
 
+.partners-table tbody tr td:nth-child(2),.partners-table tbody tr td:nth-child(5) {
+  width: 10%;
+}
+.partners-table select{
+  margin-top: -15px;
+  width: 100%;
+}
+
 
 @media screen and (max-width: 750px) {
   .Step1{

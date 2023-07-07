@@ -21,7 +21,7 @@ const FicheForm = () => {
   const [partenairesFournisseurs, setPartenairesFournisseurs] = useState('');
 
   return (
-    <div className="Step1Form">
+    <div >
       <h3>1. Fiche d'entreprise :</h3>
       <div className='ficheForm'>
         <table>

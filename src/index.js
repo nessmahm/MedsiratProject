@@ -18,11 +18,13 @@ import Table from "./pages/Guide/Table";
 import Article from "./pages/Magazine/Article";
 import Guide from './pages/Guide/Guide';
 import GettingStarted from './pages/Guide/GettingStarted';
+import GuideIntro from './pages/Guide/GuideIntro';
 import Step1 from './pages/Guide/Step1/Step1';
 import Step2Form from './pages/Guide/Step2/Step2';
 import Step3 from './pages/Guide/Step3/Step3';
 import BMCView from './pages/Guide/Step3/BMCView';
 import Step4 from './pages/Guide/Step4/Step4';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -47,6 +49,7 @@ root.render(
         <Route path="/article" element={<Article/>}/>
         <Route path="/guide" element={<Guide/>} />
         <Route path="/gettingstarted" element={<GettingStarted/>}/>
+        <Route path="/guideIntro" element={<GuideIntro/>}/>
         <Route path="/step1" element={<Step1/>}/>
         <Route path="/step2" element={<Step2Form/>}/>
         <Route path="/step3" element={<Step3/>}/>
